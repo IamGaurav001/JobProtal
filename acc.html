@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Account - Job Search Platform</title>
+    <link rel="stylesheet" href="acc.css" />
+  </head>
+  <body>
+    <!--NAVBAR-->
+    <div class="landingpage">
+      <nav class="nav">
+        <div class="logo">
+          <img src="image/logo.png" alt="Logo" href="index.html"/>
+        </div>
+      </nav>
+      <input type="checkbox" id="active" />
+      <label for="active" class="menu-btn"><i class="fas fa-bars"></i></label>
+      <div class="wrapper1">
+        <nav class="nav">
+          <div class="logo">
+            <img src="image/logo.png" alt="Logo" href="index.html"/>
+          </div>
+        </nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="job.html">Job Search</a></li>
+          <li><a href="acc.html">My Account</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li>
+            <div class="signup">
+              <a href="signup.html">SignUp</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!--NAVBAR-->
+      <div class="settings-page">
+        <div class="settings-container">
+          <h1 class="page-title">Account</h1>
+          <div class="settings-section">
+            <h2 class="settings-title">General Information</h2>
+            <div class="non-active-form">
+              <p>Gaurav Kuamr Dubey</p>
+              <i class="fas fa-pen"></i>
+            </div>
+            <div>
+              <div class="non-active-form">
+                <p class="capitalize">19 years</p>
+                <i class="fas fa-pen"></i>
+              </div>
+            </div>
+            <div>
+              <div class="non-active-form">
+                <p class="capitalize">Male</p>
+                <i class="fas fa-pen"></i>
+              </div>
+            </div>
+            <div>
+              <div class="non-active-form">
+                <p>hellogauravdubey@gmail.com</p>
+                <i class="fas fa-pen"></i>
+              </div>
+            </div>
+          </div>
+          <div class="settings-section">
+            <h2 class="settings-title">My profile</h2>
+            <form class="form my-form">
+              <div class="img-upload-container">
+                <label
+                  class="img-upload btn btn-bwm"
+                  style="background-image: url('/profile-placeholder.jpg')"
+                >
+                  <input
+                    type="file"
+                    accept=".jpg, .png, .jpeg, .gif"
+                    value=""
+                  />
+                </label>
+                <h4>Change Your Profile Picture</h4>
+                <div class="img-preview-container">
+                  <div
+                    class="img-preview"
+                    style="
+                      background-image: url(image/modi.jpeg);
+                    "
+                  ></div>
+                </div>
+              </div>
+              <div class="form-submit">
+                <button class="btn button full" type="submit" disabled="">
+                  Save New Picture
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="settings-section">
+            <h2 class="settings-title">Password</h2>
+            <form class="form my-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input
+                    name="currentPassword"
+                    placeholder="Old Password"
+                    type="password"
+                    class="form-control"
+                    autocomplete="Old Password"
+                    value=""
+                  />
+                  <span class="focus-input"></span>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group">
+                  <input
+                    name="password"
+                    placeholder="New Password"
+                    type="password"
+                    class="form-control"
+                    autocomplete="New Password"
+                    value=""
+                  />
+                  <span class="focus-input"></span>
+                </div>
+              </div>
+              <div class="form-submit right">
+                <button class="btn button full" type="submit" disabled="">
+                  Change Password
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+  </body>
+</html>

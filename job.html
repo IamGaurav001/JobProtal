@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="Img/icon.png" type="image/png" />
-    <link rel="stylesheet" href="job.css" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NiceJob</title>
+    <link rel="stylesheet" href="job.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
-    <title>NiceJob</title>
   </head>
+
   <body>
     <!--LANDING PAGE-->
     <div class="landingpage">
       <!--NAVBAR-->
-
       <nav class="nav">
         <div class="logo">
           <img src="image/logo.png" alt="Logo" />
@@ -25,34 +25,34 @@
         <section class="search-area">
           <div class="container1">
             <form
-              action="#"
               class="search-form d-flex justify-content-between align-items-center"
+              id="jobSearchForm"
             >
-              <select class="form-control">
-                <option value="1">All Category</option>
-                <option value="2">Part Time</option>
-                <option value="3">Full Time</option>
-                <option value="4">Remote</option>
-                <option value="5">Office Job</option>
+              <select class="form-control" id="categorySelect">
+                <option value="all">All Category</option>
+                <option value="part-time">Part Time</option>
+                <option value="full-time">Full Time</option>
+                <option value="remote">Remote</option>
+                <option value="office">Office Job</option>
               </select>
-              <select class="form-control">
-                <option value="1">Select Location</option>
-                <option value="2">Bangalore</option>
-                <option value="3">Pune</option>
-                <option value="4">Mumbai</option>
-                <option value="5">Chennai</option>
+              <select class="form-control" id="locationSelect">
+                <option value="all">Select Location</option>
+                <option value="Bangalore">Bangalore</option>
+                <option value="Pune">Pune</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Chennai">Chennai</option>
               </select>
               <input
                 type="text"
                 class="form-control"
                 placeholder="Search Keyword"
+                id="keywordInput"
                 required
               />
               <button type="submit" class="btn btn-primary">Find Jobs</button>
             </form>
           </div>
         </section>
-
         <!-- Search Area End -->
       </section>
     </div>
@@ -60,66 +60,49 @@
     <label for="active" class="menu-btn"><i class="fas fa-bars"></i></label>
     <div class="wrapper1">
       <nav class="nav">
-        <div class="logo">
-          <img src="image/logo.png" alt="Logo" />
-        </div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="job.html">Job Search</a></li>
+          <li><a href="acc.html">My Account</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li>
+            <div class="signup">
+              <a href="signup.html">SignUp</a>
+            </div>
+          </li>
+        </ul>
       </nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="job.html">Job Search</a></li>
-        <li><a href="manage.html">Manage</a></li>
-        <li>
-          <div class="signup">
-            <a href="signup.html">SignUp</a>
-          </div>
-        </li>
-      </ul>
     </div>
 
     <!--NAVBAR-->
 
-    <div class="container">
-      <h2>Latest Job Listings</h2>
-      <div class="job-container">
-        <h3 class="job-title">Web Developer</h3>
-        <p class="job-company">Company: ABC Tech</p>
-        <p class="job-location">Location: India</p>
-        <p class="job-description">Description: Good Web Developer</p>
-        <a href="#" class="apply-button">Apply Now</a>
+    <!-- Job Listings Container -->
+    <section class="job-listings">
+      <div class="container" id="jobListings">
+        <!-- Job listings will be dynamically added here -->
+        <div class="job-container part-time">
+          <h3 class="job-title">Web Developer</h3>
+          <p class="job-company">Company: ABC Tech</p>
+          <p class="job-location">Location: Bangalore</p>
+          <p class="job-description">Description: Good Web Developer</p>
+          <a href="#" class="apply-button">Apply Now</a>
+        </div>
+        <div class="job-container full-time">
+          <h3 class="job-title">Graphic Designer</h3>
+          <p class="job-company">Company: XYZ Design</p>
+          <p class="job-location">Location: Pune</p>
+          <p class="job-description">Description: Good Graphic Designer</p>
+          <a href="#" class="apply-button">Apply Now</a>
+        </div>
+        <!-- Add more job containers as needed -->
       </div>
-
-      <div class="job-container">
-        <h3 class="job-title">Graphic Designer</h3>
-        <p class="job-company">Company: XYZ Design</p>
-        <p class="job-location">Location: India</p>
-        <p class="job-description">Description: Good Graphic Designer</p>
-        <a href="#" class="apply-button">Apply Now</a>
-      </div>
-
-      <div class="job-container">
-        <h3 class="job-title">Graphic Designer</h3>
-        <p class="job-company">Company: XYZ Design</p>
-        <p class="job-location">Location: India</p>
-        <p class="job-description">Description: Good Graphic Designer</p>
-        <a href="#" class="apply-button">Apply Now</a>
-      </div>
-
-      <div class="job-container">
-        <h3 class="job-title">Graphic Designer</h3>
-        <p class="job-company">Company: XYZ Design</p>
-        <p class="job-location">Location: India</p>
-        <p class="job-description">Description: Good Graphic Designer</p>
-        <a href="#" class="apply-button">Apply Now</a>
-      </div>
-    </div>
+    </section>
 
     <!--FOOTER-->
-
-    <div class="footer">
+    <footer class="footer">
       <div class="col1">
         <h3>USEFUL LINKS</h3>
-
-        <a href="#">About Us </a>
+        <a href="#">About Us</a>
         <a href="#">Contact Us</a>
         <a href="#">Job Search</a>
       </div>
@@ -127,11 +110,10 @@
         <h3>Daily Job Updates</h3>
         <form>
           <input type="email" placeholder="Your Email Address" required />
-          <br />
-          <button type="submit">Subcribe Now</button>
+          <button type="submit">Subscribe Now</button>
         </form>
       </div>
-      <div class="col-3">
+      <div class="col3">
         <h3>CONTACT</h3>
         <p>123, XYZ Road, BSK 3<br />Bangalore, Karnataka, IN</p>
         <div class="social-media">
@@ -141,14 +123,53 @@
           <i class="fab fa-linkedin"></i>
         </div>
       </div>
-    </div>
-    <div class="footerBottom">
-      <p>
-        Copyright &copy;2024; Designed by
-        <span class="thedesigner">Gaurav</span>
-      </p>
-    </div>
+    </footer>
 
-    <!--FOOTER-->
+    <!-- JavaScript -->
+    <script>
+      document
+        .getElementById("jobSearchForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          filterJobs();
+        });
+
+      function filterJobs() {
+        const category = document.getElementById("categorySelect").value;
+        const location = document
+          .getElementById("locationSelect")
+          .value.toLowerCase();
+        const keyword = document
+          .getElementById("keywordInput")
+          .value.toLowerCase();
+
+        const jobContainers = document.querySelectorAll(".job-container");
+
+        jobContainers.forEach(function (container) {
+          const jobCategory =
+            container.classList.contains(category) || category === "all";
+          const jobLocation =
+            container
+              .querySelector(".job-location")
+              .textContent.toLowerCase()
+              .includes(location) || location === "all";
+          const jobKeyword =
+            container
+              .querySelector(".job-title")
+              .textContent.toLowerCase()
+              .includes(keyword) ||
+            container
+              .querySelector(".job-company")
+              .textContent.toLowerCase()
+              .includes(keyword);
+
+          if (jobCategory && jobLocation && jobKeyword) {
+            container.style.display = "block";
+          } else {
+            container.style.display = "none";
+          }
+        });
+      }
+    </script>
   </body>
 </html>

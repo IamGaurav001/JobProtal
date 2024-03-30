@@ -1,4 +1,5 @@
 body {
+    background-image: url('Img/back.jpeg');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -20,6 +21,14 @@ body {
 h2 {
     margin-bottom: 20px;
 }
+
+h1 {
+    text-align: center;
+    }
+    
+    .logo img {
+    height: 150px;
+    }
 
 input[type="text"],
 input[type="password"] {
